@@ -1,0 +1,111 @@
+body {
+    width: 375px;
+    font-size: 13px;
+    margin: auto;
+    background-color: hsl(210, 46%, 95%);
+}
+.container {
+    width: 100%;
+    margin: 15px auto;
+    padding: 1.5em 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+.first-section, .second-section, .third-section, .fourth-section, .fifth-section {
+    width: 93%;
+    height: 100%;
+    align-items: left;
+    margin: 20px auto;
+    border-radius: 8px;
+    /*border: 1px solid black;*/
+}
+.first-sub-section, .second-sub-section, .third-sub-section, .fourth-sub-section, .fifth-sub-section {
+    width: 85%;
+    margin: auto;
+    border: 1px solid black;
+}
+.first-sub-section {
+    background-image: url("bg-pattern-quotation.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.first-section {
+    background-color: hsl(263, 55%, 52%);
+    padding: em;
+    border: 1px solid black;
+}
+.second-section {
+    background-color: hsl(217, 19%, 35%);
+}
+.third-section {
+    background-color: hsl(0, 0%, 100%);
+}
+.fourth-section {
+    background-color: hsl(219, 29%, 14%);
+}
+.fifth-section {
+    background-color: hsl(0, 0%, 100%);
+}
+hgroup {
+    width: 100%;
+    margin: 10px auto 0 auto;
+    padding: 20px 0 0 0;
+}
+img {
+    float: left;
+    width: 10%;
+    margin: 0 15px 0 0;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+.first-name, .second-name, .fourth-name {
+    
+}
+.third-name, .fifth-name {
+    
+}
+p.name {
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+}
+.first-verification, .second-verification, .fourth-verification {
+    
+}
+.third-verification, .fifth-verification {
+    
+}
+p.verification {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: hsla(0, 0%, 100%, 50%);
+}
+.first-intro, .second-intro, .fourth-intro {
+    
+}
+.third-intro, .fifth-intro {
+    
+}
+h2.intro {
+    width: 100%;
+    margin: 15px auto 15px;
+    line-height: 1.3em;
+    /*border: 1px solid Black;*/
+}
+.first-testimony, .second-testimony, .fourth-testimony {
+    
+}
+.third-testimony, .fifth-testimony {
+    
+}
+p.testimony {
+    width: 100%;
+    line-height: 1.5em;
+    margin: 15px auto;
+    /*border: 1px solid Black;*/
+}
