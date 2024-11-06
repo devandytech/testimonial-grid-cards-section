@@ -1,31 +1,43 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 10px auto;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+#jonathan-image, #jeanette-image, #kira-image {
+    width: 15%;
+}
+@media only screen and (max-width: 600px) {
 body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     width: 375px;
     font-size: 13px;
     margin: auto;
     background-color: hsl(210, 46%, 95%);
 }
 .container {
-    width: 100%;
-    margin: 15px auto;
-    padding: 1.5em 0.5em;
+    margin: 15px auto 0 auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
 }
 .first-section, .second-section, .third-section, .fourth-section, .fifth-section {
-    width: 93%;
-    height: 100%;
+    width: 90%;
     align-items: left;
-    margin: 20px auto;
-    border-radius: 8px;
-    /*border: 1px solid black;*/
+    margin: 0 auto 1.4em auto;
+    padding-bottom: 2.5em;
+    border-radius: 10px;
 }
 .first-sub-section, .second-sub-section, .third-sub-section, .fourth-sub-section, .fifth-sub-section {
-    width: 85%;
-    margin: auto;
-    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 .first-sub-section {
     background-image: url("bg-pattern-quotation.svg");
@@ -34,8 +46,6 @@ body {
 }
 .first-section {
     background-color: hsl(263, 55%, 52%);
-    padding: em;
-    border: 1px solid black;
 }
 .second-section {
     background-color: hsl(217, 19%, 35%);
@@ -51,61 +61,219 @@ body {
 }
 hgroup {
     width: 100%;
-    margin: 10px auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 20px 0 0 0;
+}
+#daniel-image {
+    border: 2px solid hsla(0, 0%, 100%, 50%);
+}
+#patrick-image {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+#jonathan-image, #jeanette-image, #kira-image {
+    width: 12%;
 }
 img {
     float: left;
-    width: 10%;
+    width: 11%;
     margin: 0 15px 0 0;
     border-radius: 50%;
-    border: 2px solid hsl(0, 0%, 100%);
 }
 .first-name, .second-name, .fourth-name {
-    
-}
-.third-name, .fifth-name {
-    
-}
-p.name {
     text-align: left;
     font-weight: bold;
     margin: 0;
-    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%);
+}
+.third-name, .fifth-name {
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    color: hsl(217, 19%, 35%);
 }
 .first-verification, .second-verification, .fourth-verification {
-    
-}
-.third-verification, .fifth-verification {
-    
-}
-p.verification {
     text-align: left;
     margin: 0;
     padding: 0;
     color: hsla(0, 0%, 100%, 50%);
 }
+.third-verification, .fifth-verification {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: hsl(217, 19%, 35%, 50%);
+}
 .first-intro, .second-intro, .fourth-intro {
-    
-}
-.third-intro, .fifth-intro {
-    
-}
-h2.intro {
     width: 100%;
     margin: 15px auto 15px;
     line-height: 1.3em;
-    /*border: 1px solid Black;*/
+    color: hsl(0, 0%, 100%);
+}
+.third-intro, .fifth-intro {
+    width: 100%;
+    margin: 15px auto 15px;
+    line-height: 1.3em;
+    color: hsl(217, 19%, 35%);
 }
 .first-testimony, .second-testimony, .fourth-testimony {
-    
-}
-.third-testimony, .fifth-testimony {
-    
-}
-p.testimony {
     width: 100%;
     line-height: 1.5em;
-    margin: 15px auto;
-    /*border: 1px solid Black;*/
+    margin: 15px auto 0 auto;
+    color: hsla(0, 0%, 100%, 70%);
+}
+.third-testimony, .fifth-testimony {
+    width: 100%;
+    line-height: 1.5em;
+    margin: 15px auto 0 auto;
+    color: hsla(217, 19%, 35%, 70%);
+}
+}
+@media only screen and (min-width: 600px) and (max-width: 1440px) {
+    body {
+            width: 1440px;
+            font-family: "Barlow Semi Condensed", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size:;
+            margin: auto;
+            background: hsl(210, 46%, 95%);
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            padding: 1.5em;
+ 
+        }
+        .parent {
+            width: 95%;
+            margin: auto;
+            padding: 1em;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5em;
+        }
+        .first-section, .second-section, .third-section, .fourth-section, .fifth-section {
+            align-items: left;
+            padding: 0em;
+            border-radius: 10px;
+        }
+        .first-section {
+            grid-column: 1 / span 2;
+            grid-row: 1 / 2;
+            background-color: hsl(263, 55%, 52%);
+        }
+        .second-section {
+            grid-row: 1 / 2;
+            background-color: hsl(217, 19%, 35%);
+        }
+        .fifth-section {
+            grid-row: 1 / 3;
+            background-color: hsl(0, 0%, 100%);
+        }
+        .third-section {
+            grid-row: 2 / 3;
+            background-color: hsl(0, 0%, 100%);
+        }
+        .fourth-section {
+            grid-column: 2 / span 2;
+            background-color: hsl(219, 29%, 14%);
+        }
+        .first-sub-section, .second-sub-section, .third-sub-section, .fourth-sub-section, .fifth-sub-section {
+            margin: 0 auto;
+         }
+         .first-sub-section {
+            width: 85%;
+            color: hsla(0, 0%, 100%, 50%);
+         }
+         .second-sub-section {
+             width: 80%;
+             padding: 1em;
+         }
+         .third-sub-section {
+             width: 80%;
+             padding: 1em;
+         }
+         .fourth-sub-section {
+             width: 85%;
+         }
+         .fifth-sub-section {
+             width: 80%;
+             padding: 1em;
+         }
+         .first-hgroup, .fourth-hgroup {
+             margin: 3.4em auto 0 auto;
+             padding: 0;
+         }
+         .second-hgroup, .third-hgroup, .fifth-hgroup {
+             margin: 2.5em auto 0 auto;
+             padding: 0;
+         }
+         #daniel-image {
+            border: 2px solid hsla(0, 0%, 100%, 50%);
+         }
+         #patrick-image {
+            border: 2px solid hsl(263, 55%, 52%);
+         }
+         #jonathan-image, #jeanette-image, #kira-image {
+            width: 16.5%;
+         }
+         img {
+            float: left;
+            width: 8%;
+            margin: 0 1.8em 0 0;
+            border-radius: 50%;
+         }
+         .background-sticker {
+             width: 100%;
+             margin: 0;
+             padding: 0;
+             background-image: url("bg-pattern-quotation.svg");
+             background-position: top right;
+             background-repeat: no-repeat;
+         }
+         .first-name, .second-name, .fourth-name, .third-name, .fifth-name {
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 0.2em;
+            color: hsl(0, 0%, 100%);
+         }
+         .third-name, .fifth-name {
+             color: hsl(217, 19%, 35%);
+         }
+         .first-verification, .second-verification, .fourth-verification {
+            text-align: left;
+            padding: 0 0 0.8em 0;
+            margin: 0;
+            color: hsla(0, 0%, 100%, 50%);
+          }
+          .third-verification, .fifth-verification {
+            text-align: left;
+            padding: 0 0 0.8em 0;
+            margin: 0;
+            color: hsl(217, 19%, 35%, 50%);
+          }
+          .first-intro, .second-intro, .fourth-intro {
+            width: 100%;
+            margin: 15px auto;
+            line-height: 1.5em;
+            color: hsl(0, 0%, 100%);
+          }
+          .third-intro, .fifth-intro {
+            width: 100%;
+            margin: 15px auto;
+            line-height: 1.5em;
+            color: hsl(217, 19%, 35%);
+          }
+          .first-testimony, .second-testimony, .fourth-testimony {
+            width: 100%;
+            line-height: 1.6em;
+            margin: 30px auto;
+            color: hsla(0, 0%, 100%, 70%);
+          }
+          .third-testimony, .fifth-testimony {
+            width: 100%;
+            line-height: 1.6em;
+            margin: 30px auto;
+            color: hsla(217, 19%, 35%, 70%);
+          }
 }
